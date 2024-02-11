@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>3D Model Viewer</title>
+  <style>
+    .frame {
+      width: 98vw;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .frame iframe {
+      width: 100%;
+      height: 100%;
+      /* pointer-events: none; */
+    }
+
+    .explore-button {
+      display: none;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="frame" id="firstFrame">
+    <iframe src='https://my.spline.design/untitled-f036735ffd439b814b42058d9f805c85/' frameborder='0' width='100%'
+      height='100%'></iframe>
+    <div class="explore-button" id="exploreButton">Explore More</div>
+  </div>
+  <div class="frame" id="secondFrame">
+    <p>Explore more..
+      Lorennewdnwidoqwdmjwioenfbwejklskgfdhjklasdkjfbdskal;</p>
+  </div>
+  <div>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fz8qEdnYdxEveSqd6oaFu1A%2FCarvr-Law%3Ftype%3Ddesign%26node-id%3D7-491%26t%3DLQi4i7pCczBjK84R-1%26scaling%3Dscale-down%26page-id%3D7%253A246%26starting-point-node-id%3D7%253A491%26mode%3Ddesign"
+      allowfullscreen></iframe>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FcWqSVvOEAZCTGRFYS7hAEh%2Fachievement-tracker%3Ftype%3Ddesign%26node-id%3D1-2%26t%3D7FW2UpQbiKihqnzl-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2%26show-proto-sidebar%3D1%26mode%3Ddesign" allowfullscreen></iframe>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FUm0MboyeSPmWfKwtcWr3bU%2FPortfolio%3Ftype%3Ddesign%26node-id%3D7-5%26t%3DQK1X3ia7XRvKMCjM-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D7%253A5%26mode%3Ddesign" allowfullscreen></iframe>
+  </div>
+
+  <script>
+    const firstFrame = document.getElementById('firstFrame');
+    const exploreButton = document.getElementById('exploreButton');
+
+    setTimeout(() => {
+      exploreButton.style.display = 'block';
+    }, 7000);
+
+    exploreButton.addEventListener('click', () => {
+      window.scrollBy({
+        top: window.innerHeight,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+
+</html>
